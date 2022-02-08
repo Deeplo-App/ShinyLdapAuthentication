@@ -2,8 +2,8 @@ Package: shinyLdapAuthentication
 Type: Package
 Title: Authenticate Users Against Ldap Server
 Version: 0.1.0
-Author: Enguerrand Declercq & Victor Laforet
-Maintainer: Deeplo Team
+Author: Enguerrand Declercq, Victor Laforet
+Maintainer: Deeplo Team <deeplo@example.org>
 Description: This package allows users to be authenticated using their credentials
     from an ldap server (or Active Directory).
 License: MIT
