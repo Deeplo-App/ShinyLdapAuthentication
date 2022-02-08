@@ -19,6 +19,9 @@ ui <- fluidPage(
 )
 
 server <- function(input, output, session) {
+  setLdapServerUrl('ldap://localhost:1389')
+  setLdapDomain('ou=users,dc=example,dc=org')
+
   go_click <- shiny::observeEvent(input[["submit_login"]], {
     output[["login_error_text"]] <- NULL
     output[["login_content"]] <- NULL
