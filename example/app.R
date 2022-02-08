@@ -18,7 +18,7 @@ ui <- fluidPage(
   )
 )
 
-server <- function(input, output) {
+server <- function(input, output, session) {
   go_click <- shiny::observeEvent(input[["submit_login"]], {
     output[["login_error_text"]] <- NULL
     output[["login_content"]] <- NULL
